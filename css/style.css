@@ -90,6 +90,7 @@ header{
         white-space: nowrap;
 	overflow: hidden;
         padding-top: 150px;
+	margin: 0;
 }
 
 /*スクロールを促すアイコン*/
