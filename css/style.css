@@ -81,11 +81,12 @@ a:hover {
 header{
 	height: 100vh;
 	text-align:center;
+	position: relative;
 }
 
 .flowing {
-	width: auto;
-	margin: auto;
+	width: 0;
+	margin: 0;
 	font-size: 3vw;
 	font-weight: bold;
 	text-align:center;
@@ -93,6 +94,11 @@ header{
 	white-space: nowrap;
 	overflow: hidden;
 	animation: flowing-anim 3s forwards linear;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform : translate(-50%,-50%);
+        transform : translate(-50%,-50%);
 }
 .flowing:nth-child(2) {
 	animation-delay: 0.5s;
