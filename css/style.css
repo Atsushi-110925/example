@@ -1,25 +1,17 @@
 @charset "utf-8";
 
-
-
 /*リセットCSS（sanitize.css）の読み込み
 ---------------------------------------------------------------------------*/
 @import url("https://unpkg.com/sanitize.css");
-
 /*Google Fontsの読み込み
 ---------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
-
-
 /*slick.cssの読み込み
 ---------------------------------------------------------------------------*/
 @import url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css");
-
 /*inview.cssの読み込み
 ---------------------------------------------------------------------------*/
 @import url("inview.css");
-
-
 
 /*全体の設定
 ---------------------------------------------------------------------------*/
@@ -98,10 +90,10 @@ a:hover {
 	animation: flowing-anim 3s forwards linear;
 }
 .flowing:nth-child(2) {
-	animation-delay: 2.5s;
+	animation-delay: 1s;
 }
 .flowing:nth-child(3) {
-	animation-delay: 5s;
+	animation-delay: 2s;
 }
 @keyframes flowing-anim {
  0%{
@@ -268,53 +260,9 @@ ul.icon img:hover {
 }
 
 /*トップページの「Photo's（お料理の写真）」の横スライドショーコーナー（slickを使用）
----------------------------------------------------------------------------*/
-/*スライドショー全体を囲むボックス*/
-.pickup {
-	position: relative;
-	display: flex;			/*flexボックスを使う指定*/
-}
+---------------------------------------------------------------------------*
 
-/*１個あたりのボックス*/
-.pickup .slick-slide {
-	margin: 5px !important;
-	width: auto;
-}
-
-/*ボックス内の画像*/
-.pickup .list img {
-	object-fit: cover;	/*トリミングのタイプ*/
-	width: 100%;		/*画像の幅*/
-	font-family: 'object-fit: cover;';	/*IE対策*/
-}
-
-/*「お知らせ」ブロック
----------------------------------------------------------------------------*/
-/*お知らせブロック*/
-#new {
-	display: flex;		/*flexボックスを使う指定*/
-	flex-wrap: wrap;	/*折り返す指定*/
-	padding: 0 5px;		/*上下、左右へのボックス内の余白*/
-}
-
-/*日付(dt)、記事(dd)共通設定*/
-#new dt,
-#new dd {
-	border-bottom: 1px solid rgba(255,255,255,0.2);	/*下線の幅、線種、色。255,255,255,は白の事で0.2は色が20%出た状態の事。*/
-	padding: 5px 0;					/*上下、左右へのボックス内の余白*/
-}
-
-/*日付(dt)設定*/
-#new dt {
-	width: 8em;	/*幅。8文字(em)分。*/
-}
-
-/*記事(dd)設定*/
-#new dd {
-	width: calc(100% - 8em);	/*「8em」は上の「#new dt」のwidthの値です。*/
-}
-
-/*menu.htmlの画像配置のコンパクトメニュー部分
+*menu.htmlの画像配置のコンパクトメニュー部分
 ---------------------------------------------------------------------------*/
 /*listボックスを囲むボックス*/
 .list-container {
@@ -509,8 +457,6 @@ ul.icon img:hover {
 .look {display: inline-block;border: 1px solid #ccc;padding: 5px 20px;background: rgba(0,0,0,0.03);border-radius: 5px;margin: 5px 0;}
 .ofx {overflow-x: hidden;}
 
-
-
 /*---------------------------------------------------------------------------
 ここから下は画面幅800px以上の追加指定
 ---------------------------------------------------------------------------*/
@@ -600,4 +546,3 @@ section + section {
 /*　※注意！　下の閉じカッコ　}　は800px以上の設定に必要なので、うっかり削除しないように。　*/
 
 }
-
