@@ -111,6 +111,13 @@ flowing:nth-child(3) {
    }
 }
 
+/*スクロールを促すアイコン*/
+.scroll {
+	position: absolute;left: 50%;bottom: 20px;transform: translateX(-50%);
+	width: 30px;	/*画像の幅*/
+	opacity: 0.7;	/*透明度。0.7は色が70%出た状態の事。*/
+}
+
 /*mainブロック
 ---------------------------------------------------------------------------*/
 main {
@@ -429,32 +436,6 @@ ul.icon img:hover {
 	text-align: right;	/*価格なので、テキストを右寄せで揃えて見やすくしておく。*/
 	padding: 10px 20px 10px 0px;	/*上、右、下、左への余白*/
 	border-bottom: 1px solid rgba(255,255,255,0.2);	/*下線の幅、線種、色。*/
-}
-
-/*トップページのスライドショー（vegasを使用）
----------------------------------------------------------------------------*/
-#mainimg {
-    width: 100vw;
-    height: 100vh;
-}
-
-/*SVGロゴ設定*/
-#svg-logo {
-	position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
-	width: 300px;		/*幅*/
-    stroke: #fff;		/*ここはこのままで変更しない（文字色の指定ではありません）*/
-    stroke-width: 12;	/*ロゴをなぞった際の線の太さを指定して下さい。*/
-}
-
-/*スクロールを促すアイコン*/
-.scroll {
-	position: absolute;left: 50%;bottom: 20px;transform: translateX(-50%);
-	width: 30px;	/*画像の幅*/
-	opacity: 0.7;	/*透明度。0.7は色が70%出た状態の事。*/
 }
 
 /*テーブル
