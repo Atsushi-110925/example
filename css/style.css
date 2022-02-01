@@ -89,13 +89,13 @@ header{
 	color: #fff;
         white-space: nowrap;
 	overflow: hidden;
-        padding-top: 100px;
+        padding-top: 150px;
 	margin: 0;
 	animation-name: fade;
 	animation-duration:5s;
 }
 .flowing p {
-	font-size: 14px;
+	font-size: 12px;
 }
 
 @keyframes fade{
