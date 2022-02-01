@@ -84,18 +84,18 @@ header{
 }
 
 .flowing {
-	font-size: 40px;
+	font-size: 20px;
 	font-weight: bold;
 	color: #fff;
         white-space: nowrap;
 	overflow: hidden;
-        padding-top: 150px;
+        padding-top: 50px;
 	margin: 0;
 	animation-name: fade;
 	animation-duration:5s;
 }
 .flowing p {
-	font-size: 20px;
+	font-size: 10px;
 }
 
 @keyframes fade{
@@ -481,8 +481,18 @@ section + section {
 ---------------------------------------------------------------------------*/
 #container {
 	padding: 0 50px;	/*上下、左右へのブロック内の余白*/
-}
+}	
 
+---------------------------------------------------------------------------*/
+/*トップページのロゴ*/
+.flowing {
+	font-size: 40px;
+        padding-top: 150px;
+}
+.flowing p {
+	font-size: 20px;
+}
+	
 /*menu.htmlの画像配置のコンパクトメニュー部分
 ---------------------------------------------------------------------------*/
 /*１個あたりのボックス*/
