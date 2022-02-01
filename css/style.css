@@ -84,7 +84,7 @@ header{
 }
 
 .flowing {
-	font-size: 80px;
+	font-size: 40px;
 	font-weight: bold;
 	color: #fff;
         white-space: nowrap;
@@ -95,7 +95,7 @@ header{
 	animation-duration:3s;
 }
 .flowing p {
-	font-size: 30px;
+	font-size: 20px;
 }
 
 @keyframes fade{
