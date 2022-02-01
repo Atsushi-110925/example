@@ -80,12 +80,12 @@ a:hover {
 /*トップページのロゴ*/
 header{
 	height: 100vh;
+	text-align:center;
 }
 
 .flowing {
 	font-size: 3vw;
 	font-weight: bold;
-	text-align:center;
 	color: #fff;
         white-space: nowrap;
 	overflow: hidden;
