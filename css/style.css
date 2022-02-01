@@ -85,28 +85,60 @@ a:hover {
 
 /*headerブロック（ロゴが入った最上段のブロック）
 ---------------------------------------------------------------------------*/
-/*トップページの画像ロゴ(png画像)設定*/
-.home header #logo {
-	position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);
-	width: 300px;				/*ロゴ画像の幅*/
-	animation-name: opa1;		/*@keyframesの指定*/
-	animation-duration: 3S;		/*アニメーションの実行時間*/
-	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを維持、終了後は最後のキーフレームを維持。*/
+.slide-in {
+  overflow: hidden;
+    display: inline-block;
 }
 
-/*トップページの画像ロゴ(png画像)を、デフォルトでは非表示にする*/
-.home header #logo {
-	display: none;
+.slide-in_inner {
+  display: inline-block;
+
 }
 
-/*ロゴアニメーションを使わない場合の設定*/
-.home.index2 header #logo {display: block;}
-.home.index2 svg {display: none;}
-
-/*トップページ以外のロゴ画像の幅*/
-header #logo {
-	width: 150px;
+/*左右のアニメーション*/
+.leftAnime{
+    opacity: 0;/*事前に透過0にして消しておく*/
 }
+
+.slideAnimeLeftRight {
+  animation-name:slideTextX100;
+  animation-duration:0.8s;
+  animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextX100 {
+  from {
+  transform: translateX(-100%); /*要素を左の枠外に移動*/
+        opacity: 0;
+  }
+
+  to {
+  transform: translateX(0);/*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+.slideAnimeRightLeft {
+  animation-name:slideTextX-100;
+  animation-duration:0.8s;
+  animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+
+@keyframes slideTextX-100 {
+  from {
+  transform: translateX(100%);/*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+  transform: translateX(0);/*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
 
 /*mainブロック
 ---------------------------------------------------------------------------*/
