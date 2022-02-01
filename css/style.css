@@ -486,11 +486,11 @@ section + section {
 ---------------------------------------------------------------------------*/
 /*トップページのロゴ*/
 .flowing {
-	font-size: 40px;
+	font-size: 4/5em;;
         padding-top: 150px;
 }
 .flowing p {
-	font-size: 20px;
+	font-size: 1.5em;;
 }
 	
 /*menu.htmlの画像配置のコンパクトメニュー部分
