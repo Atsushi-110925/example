@@ -92,8 +92,6 @@ header{
         padding-top: 150px;
 	margin: 0;
 	animation-name: fade;
-        animation-duration: 1s;
-        animation-iteration-count: 5;
 }
 
 @keyframes fade{
@@ -101,7 +99,7 @@ header{
     opacity: 0;
   }
   100%{
-    opacity: 1;
+    opacity: 2;
   }
 }
 
