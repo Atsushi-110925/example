@@ -92,21 +92,11 @@ header{
 	text-align:center;
 	color: #fff;
 	white-space: nowrap;
-	overflow: hidden;
-	animation: flowing-anim 3s forwards linear;
         position: absolute;
         top: 50%;
         left: 50%;
         -webkit-transform : translate(-50%,-50%);
         transform : translate(-50%,-50%);
-}
-@keyframes flowing-anim {
- 0%{
-     width: 0%;
-   }
-100%{
-     width: 100%;
-   }
 }
 
 /*スクロールを促すアイコン*/
