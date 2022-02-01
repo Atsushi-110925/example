@@ -485,8 +485,8 @@ section + section {
 
 ---------------------------------------------------------------------------*/
 /*トップページのロゴ*/
-.flowing {
-	font-size: 4/5em;;
+.flowing h1 {
+	font-size: 4em;;
         padding-top: 150px;
 }
 .flowing p {
