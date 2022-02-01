@@ -92,6 +92,7 @@ header{
         padding-top: 150px;
 	margin: 0;
 	animation-name: fade;
+	animation-duration:3s;
 }
 .flowing p {
 	font-size: 30px;
@@ -102,7 +103,7 @@ header{
     opacity: 0;
   }
   100%{
-    opacity: 2;
+    opacity: ;
   }
 }
 
