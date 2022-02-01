@@ -91,6 +91,18 @@ header{
 	overflow: hidden;
         padding-top: 150px;
 	margin: 0;
+	animation-name: fade;
+        animation-duration: 1s;
+        animation-iteration-count: 5;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 /*スクロールを促すアイコン*/
