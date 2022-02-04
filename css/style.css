@@ -410,7 +410,6 @@ section + section {
 #container {
 	padding: 0 50px;	/*上下、左右へのブロック内の余白*/
 }	
-
 ---------------------------------------------------------------------------*/
 /*トップページのロゴ*/
 .flowing h1 {
@@ -444,16 +443,6 @@ section + section {
 	width: 48%;	/*幅*/
 }
 
-	
-/* photo.htmlの設定 */
-.gallery {
-    padding-left: 10px;
-}
-.gallery .gallery-item {
-    width: 23%;
-
-}	
-	
 /*その他
 ---------------------------------------------------------------------------*/
 .ws {width: 45%;display: inline-block;}
