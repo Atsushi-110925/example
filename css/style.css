@@ -347,7 +347,7 @@ ul.icon img:hover {
 .gallery {
     display: flex;
     margin: 60px 0;
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: auto;
 }
 .gallery .gallery-item {
@@ -432,6 +432,16 @@ section + section {
 	width: 48%;	/*幅*/
 }
 
+	
+/* photo.htmlの設定 */
+.gallery {
+    padding-left: 10px;
+}
+.gallery .gallery-item {
+    width: 23%;
+
+}	
+	
 /*その他
 ---------------------------------------------------------------------------*/
 .ws {width: 45%;display: inline-block;}
