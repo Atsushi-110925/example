@@ -368,7 +368,6 @@ ul.icon img:hover {
     width: 25%;
     position: relative;
     bottom: -15px;
-    transition: 1s;
     margin: 3px;
 }
 .gallery .gallery-item figure {
