@@ -358,6 +358,7 @@ ul.icon img:hover {
 
 .gallery {
     margin: 5px 0;
+    padding: 5px
     text-align: center;
 }
 .gallery .gallery-item {
