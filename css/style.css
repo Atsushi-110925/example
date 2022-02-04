@@ -245,13 +245,6 @@ ul.icon img:hover {
 	margin-bottom: 40px;	/*下に空けるスペース*/
 }
 
-/*list2ブロック内のh4タグ*/
-.list2 h4 {
-	margin: 0;
-	font-size: 1.2rem;		/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
-	font-weight: normal;	/*hタグはデフォルトで太字なので、これを標準にする*/
-	text-align: center;		/*テキストをセンタリング*/
-}
 
 /*写真下の小さなテキスト*/
 .list2 figcaption {
@@ -291,7 +284,7 @@ ul.icon img:hover {
 /*list2内のリストタグ内のspanタグ。文字サイズの小さい説明テキスト部分です。*/
 .list2 li span {
 	display: block;
-	font-size: 0.7rem;	/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
+	font-size: 0.8rem;	/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
 	opacity: 0.5;		/*透明度。0.5は色が50%出た状態の事。*/
 }
 
