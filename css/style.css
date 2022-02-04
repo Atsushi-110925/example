@@ -367,7 +367,6 @@ ul.icon img:hover {
     display: inline-flex;
     width: 25%;
     position: relative;
-    opacity: 0;
     bottom: -15px;
     transition: 1s;
     margin: 3px;
