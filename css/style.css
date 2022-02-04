@@ -330,12 +330,10 @@ div.photo {
 }
 /*ブロック内のh1タグ*/
 .photo h1 {
-	opacity: 0;							/*透明度。0は色が出ていない(0%)状態の事。*/
-	text-align: center;					/*文字をセンタリング*/
+	opacity: 0;									
 	font-family: 'Tangerine', cursive, "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka;
-	font-weight: normal;				/*hタグはデフォルトで太字なので、これを標準にする*/
-	font-size: 4rem;					/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
-	margin-bottom: 80px;
+	font-weight: normal;				
+	font-size: 4rem;					
 }
 
 /*ブロック内のh2タグ内のspanタグ（日本語の小さい説明用部分）*/
