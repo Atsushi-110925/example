@@ -328,7 +328,7 @@ div.photo {
 	height:auto;
 	text-align: center;
 }
-*ブロック内のh1タグ*/
+/*ブロック内のh1タグ*/
 .photo h1 {
 	opacity: 0;							/*透明度。0は色が出ていない(0%)状態の事。*/
 	text-align: center;					/*文字をセンタリング*/
