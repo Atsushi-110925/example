@@ -357,7 +357,6 @@ ul.icon img:hover {
 }
 
 .gallery {
-    display: flex;
     margin: 5px 0;
     padding: 5px;
 }
