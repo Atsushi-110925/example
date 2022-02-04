@@ -69,8 +69,8 @@ header{
 }
 
 .flowing {
-	font-size: 16px;
-	font-weight: bold;
+        font-family: 'Tangerine', cursive, "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka;
+	font-weight: normal;
 	color: #fff;
         white-space: nowrap;
 	overflow: hidden;
