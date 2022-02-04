@@ -337,8 +337,9 @@ ul.icon img:hover {
 
 ---------------------------------------------------------------------------*/
 /* photo.htmlの設定 */
-header.photo {
+.photo {
 	height:auto;
+	text-align:center;
 }
 *ブロック内のh1タグ*/
 .photo h1 {
