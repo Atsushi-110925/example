@@ -49,13 +49,6 @@ video {max-width: 100%;}
 /*iframeタグ*/
 iframe {width: 100%;}
 
-/*opa1（透明から着色状態に）
----------------------------------------------------------------------------*/
-@keyframes opa1 {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
-}
-
 /*リンクテキスト全般の設定
 ---------------------------------------------------------------------------*/
 a {
@@ -344,22 +337,11 @@ ul.icon img:hover {
 
 ---------------------------------------------------------------------------*/
 /* photo.htmlの設定 */
-.photo {
-	font-size: 16px;
-	font-weight: bold;
-	color: #fff;
-        white-space: nowrap;
-	overflow: hidden;
-        padding-top: 150px;
-	margin: 0;
-	animation-name: fade;
-	animation-duration:5s;
-}
-
 .gallery {
     margin: 5px 0;
     padding: 5px;
     text-align: center;
+　　animation-name: fade;
 }
 .gallery .gallery-item {
     border: 3px solid #d3d3d3;
