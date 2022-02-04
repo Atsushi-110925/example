@@ -49,7 +49,6 @@ video {max-width: 100%;}
 /*iframeタグ*/
 iframe {width: 100%;}
 
-
 /*opa1（透明から着色状態に）
 ---------------------------------------------------------------------------*/
 @keyframes opa1 {
@@ -62,7 +61,6 @@ iframe {width: 100%;}
 a {
 	color: #fff;	/*文字色*/
 }
-
 a:hover {
 	color: #999;	/*マウスオン時の文字色*/
 }
@@ -344,39 +342,38 @@ ul.icon img:hover {
 .look {display: inline-block;border: 1px solid #ccc;padding: 5px 20px;background: rgba(0,0,0,0.03);border-radius: 5px;margin: 5px 0;}
 .ofx {overflow-x: hidden;}
 
-
 ---------------------------------------------------------------------------*/
 /* photo.htmlの設定 */
 .gallery {
-	padding: 0;
-	display: flex;
-	margin: 60px 0;
+    padding: 0;
+    display: flex;
+    margin: 60px 0;
 }
 .gallery .gallery-item {
-	list-style: none;
-	width: 25%;
-	padding: 15px;
-	position: relative;
-	/* アニメーションに関数プロパティ */
-	opacity: 0; 	/* フェードインしたいので最初は非表示 */
-	bottom: -15px; 	/* 下から上に移動したいので最初はマイナス値 */
-	transition: 1s; /* 1秒かけてアニメーション */
+    border: 3px solid #d3d3d3;
+    list-style: none;
+    display: inline-flex;
+    width: 30%;
+    position: relative;
+    opacity: 0;
+    bottom: -15px;
+    transition: 1s;
+    margin: 3px;
 }
 .gallery .gallery-item figure {
-	margin: 0;
+    margin: 0;
 }
 .gallery .gallery-item img {
-	max-width: 100%;
-	height: auto;
-	box-shadow: 0 5px 20px 0px rgb(0 0 0 / 30%);
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 5px 20px 0px rgb(0 0 0 / 30%);
 }
 
 /* スクロールした時に追加されるclass */
 .gallery .gallery-item.fadein {
-	opacity: 1;
-	bottom: 0;
+    opacity: 1;
+    bottom: 0;
 }
-
 
 /*---------------------------------------------------------------------------
 ここから下は画面幅800px以上の追加指定
