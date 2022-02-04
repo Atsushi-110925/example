@@ -344,6 +344,18 @@ ul.icon img:hover {
 
 ---------------------------------------------------------------------------*/
 /* photo.htmlの設定 */
+.photo {
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+        white-space: nowrap;
+	overflow: hidden;
+        padding-top: 150px;
+	margin: 0;
+	animation-name: fade;
+	animation-duration:5s;
+}
+
 .gallery {
     display: flex;
     margin: 60px 0;
