@@ -336,7 +336,6 @@ div.photo {
 	font-weight: normal;				/*hタグはデフォルトで太字なので、これを標準にする*/
 	font-size: 4rem;					/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
 	margin-bottom: 80px;
-	text-align: center;
 }
 
 /*ブロック内のh2タグ内のspanタグ（日本語の小さい説明用部分）*/
