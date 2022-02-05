@@ -353,6 +353,26 @@ div.photo {
 
 /* movie.htmlの設定 ---------------------------------------------------------------------------*/
 /*listボックスの設定*/
+.list3 {
+	display: flex;			/*flexボックスを使う指定*/
+	flex-direction: column;	/*子要素を縦並びにする*/
+	align-items: center;	/*垂直揃えの指定。上下中央に配置されるように。*/
+	justify-content: space-between;	/*並びかたの種類の指定*/
+	margin-bottom: 40px;	/*下に空けるスペース*/
+	border: 1px solid #555;
+}
+
+/*list3ブロック内のfigureタグ。写真を囲むブロック。*/
+.list3 figure {
+	width: 90%;				/*幅*/
+	text-align: center;		/*テキストをセンタリング*/
+}
+
+/*list3内のtextブロック*/
+.list3 .text {
+	width: 100%;	/*幅*/
+}
+
 /*leftスタイル。左からフェードインしてくるスタイル（待機中）*/
 .left {
 	left: -100px;	/*基準値より左に100pxの場所からスタート*/
