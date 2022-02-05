@@ -360,13 +360,13 @@ div.photo {
 	justify-content: space-between;	/*並びかたの種類の指定*/
 	margin-bottom: 40px;	/*下に空けるスペース*/
 	border: 1px solid #555;
+	padding: 10px;
 }
 
 /*list3ブロック内のfigureタグ。写真を囲むブロック。*/
 .list3 figure {
 	width: 90%;				/*幅*/
 	text-align: center;		/*テキストをセンタリング*/
-	margin: 10px 0px 0px 10px;
 }
 
 /*list3内のtextブロック*/
