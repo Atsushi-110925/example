@@ -366,6 +366,7 @@ div.photo {
 .list3 figure {
 	width: 90%;				/*幅*/
 	text-align: center;		/*テキストをセンタリング*/
+	margin: 10px 0px 0px 10px;
 }
 
 /*list3内のtextブロック*/
