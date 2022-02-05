@@ -353,39 +353,6 @@ div.photo {
 
 /* movie.htmlの設定 ---------------------------------------------------------------------------*/
 /*listボックスの設定*/
-#contents .list3 {
-	position: relative;overflow: hidden;
-	display: flex;
-	align-items: center;
-	margin: 0 10px 30px;	/*上、左右、下へのボックスの外側に空けるスペース*/
-	color: #faf6f3;			/*文字色*/
-	border: 1px solid #555;
-
-        flex-direction: column;	/*子要素を縦並びにする*/
-        justify-content: space-between;	/*並びかたの種類の指定*/
-}
-/*ボックス内のh4（見出し）タグ*/
-#contents .list3 h4 {
-	font-size: 24px;
-	line-height: 1.5;
-	margin-bottom: 20px;
-}
-/*ボックス内のp（段落）タグ*/
-#contents .list3 p {
-	padding: 0;
-}
-/*ボックス内のfigure画像*/
-#contents .list3 figure {
-	float: left;	/*左に回り込み*/
-	width: 50%;		/*幅*/
-}
-/*「class="text"」を指定したブロック。テキストブロック。*/
-#contents .list3 .text {
-	float: right;	/*右に回り込み*/
-	width: 40%;		/*幅*/
-	margin: 5%;		/*外側に取るスペース。これがないと枠ギチギチに文字が表示されます。*/
-}
-
 /*leftスタイル。左からフェードインしてくるスタイル（待機中）*/
 .left {
 	left: -100px;	/*基準値より左に100pxの場所からスタート*/
