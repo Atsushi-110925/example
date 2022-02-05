@@ -230,13 +230,6 @@ ul.icon img:hover {
 	margin-bottom: 40px;	/*下に空けるスペース*/
 }
 
-
-/*写真下の小さなテキスト*/
-.list2 figcaption {
-	margin-top: 20px;	/*写真とテキストとの間に空けるスペース*/
-	font-size: 0.7rem;	/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
-}
-
 /*list2ブロック内のfigureタグ。写真を囲むブロック。*/
 .list2 figure {
 	width: 90%;				/*幅*/
@@ -249,11 +242,6 @@ ul.icon img:hover {
 	background: #fff;	/*上の10pxとの間に出る色*/
 	box-shadow: 0px 0px 50px 10px rgba(255,255,255,0.4);	/*ボックスの影。右へ、下へ、ぼかし幅、範囲。255,255,255は白の事で0.4は色が40%出た状態の事。*/
 	transform: rotate(-2deg);	/*左に少しだけ回転させる指定。回転させたくなければこの１行と、下の「.list2:nth-of-type(even) img」のブロックを削除。*/
-}
-
-/*偶数番目のimg画像*/
-.list2:nth-of-type(even) img {
-	transform: rotate(2deg);	/*回転を上と逆向きに。*/
 }
 
 /*list2内のtextブロック*/
@@ -365,31 +353,34 @@ div.photo {
 
 /* movie.htmlの設定 ---------------------------------------------------------------------------*/
 /*listボックスの設定*/
-#contents .list {
+#contents .list3 {
 	position: relative;overflow: hidden;
 	display: flex;
 	align-items: center;
 	margin: 0 10px 30px;	/*上、左右、下へのボックスの外側に空けるスペース*/
 	color: #faf6f3;			/*文字色*/
 	border: 1px solid #555;
+
+        flex-direction: column;	/*子要素を縦並びにする*/
+        justify-content: space-between;	/*並びかたの種類の指定*/
 }
 /*ボックス内のh4（見出し）タグ*/
-#contents .list h4 {
+#contents .list3 h4 {
 	font-size: 24px;
 	line-height: 1.5;
 	margin-bottom: 20px;
 }
 /*ボックス内のp（段落）タグ*/
-#contents .list p {
+#contents .list3 p {
 	padding: 0;
 }
 /*ボックス内のfigure画像*/
-#contents .list figure {
+#contents .list3 figure {
 	float: left;	/*左に回り込み*/
 	width: 50%;		/*幅*/
 }
 /*「class="text"」を指定したブロック。テキストブロック。*/
-#contents .list .text {
+#contents .list3 .text {
 	float: right;	/*右に回り込み*/
 	width: 40%;		/*幅*/
 	margin: 5%;		/*外側に取るスペース。これがないと枠ギチギチに文字が表示されます。*/
@@ -410,6 +401,7 @@ div.photo {
 /*要素が見えたら実行するアクション*/
 .rightstyle {
 	right: 0px;		/*基準値まで戻す*/
+}
 }
 
 /*ここから下は画面幅800px以上の追加指定---------------------------------------------------------------------------*/
