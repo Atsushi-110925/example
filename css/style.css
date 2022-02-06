@@ -12,49 +12,44 @@
 /*全体の設定---------------------------------------------------------------------------*/
 html,body {
 	overflow-x: hidden;
-	font-size: 14px;	/*基準となるフォントサイズ。下の方にある「画面幅800px以上」で基準を大きなサイズに変更しています。*/
+	font-size: 14px;
 }
 
 body {
-	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	-webkit-text-size-adjust: none;
-	background: #000;	/*背景色*/
-	color: #E5E5E5;	/*全体の文字色*/
-	line-height: 2;		/*行間*/
+	background: #000;
+	color: #E5E5E5;	
+	line-height: 2;	
 }
 
-/*マージンのリセット*/
 figure {margin: 0;}
 dd {margin: 0;}
 
-/*table全般の設定*/
 table {border-collapse:collapse;}
 
-/*画像全般の設定*/
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 
-/*section全般の設定*/
 section + section {
-	padding-top: 30px;	/*sectionの間に空けるスペース*/
+	padding-top: 30px;
 }
 
 /*リンクテキスト全般の設定---------------------------------------------------------------------------*/
 a {
-	color: #fff;	/*文字色*/
+	color: #fff;
 }
 a:hover {
-	color: #999;	/*マウスオン時の文字色*/
+	color: #999;
 }
 
 /*container。サイト全体を囲むブロック。---------------------------------------------------------------------------*/
 #container {
 	margin: 0 auto;
-	max-width: 1400px;	/*最大幅。これ以上幅が広がらないように。*/
-	padding: 0 10px;	/*上下、左右へのブロック内の余白*/
+	max-width: 1400px;
+	padding: 0 10px;
 }
 
 /*headerブロック（ロゴが入った最上段のブロック）---------------------------------------------------------------------------*/
-/*トップページのロゴ*/
 header{
 	height: 100vh;
 	text-align:center;
@@ -70,6 +65,7 @@ header{
 	animation-name: fade;
 	animation-duration:5s;
 }
+
 .flowing p {
 	font-size: 12px;
 }
@@ -83,42 +79,36 @@ header{
   }
 }
 
-/*スクロールを促すアイコン*/
 .scroll {
 	position: absolute;left: 50%;bottom: 20px;transform: translateX(-50%);
-	width: 30px;	/*画像の幅*/
-	opacity: 0.7;	/*透明度。0.7は色が70%出た状態の事。*/
+	width: 30px;
+	opacity: 0.7;
 }
 
 /*mainブロック---------------------------------------------------------------------------*/
 main {
-	margin-bottom: 100px;	/*下に空けるスペース*/
+	margin-bottom: 100px;
 }
 
-/*ブロック内のh2タグ*/
 main h2 {
-	opacity: 0;							/*透明度。0は色が出ていない(0%)状態の事。*/
-	text-align: center;					/*文字をセンタリング*/
+	opacity: 0;
+	text-align: center;
 	font-family: 'Tangerine', cursive, "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka;
-	font-weight: normal;				/*hタグはデフォルトで太字なので、これを標準にする*/
-	font-size: 4rem;					/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
-	margin-bottom: 80px;				/*下に空けるスペース*/
+	font-weight: normal;
+	font-size: 4rem;
+	margin-bottom: 80px;
 }
 
-/*ブロック内のh2タグ内のspanタグ（日本語の小さい説明用部分）*/
 main h2 span {
 	display: block;	
-	font-size: 0.8rem;			/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
-	letter-spacing: 0.2em;		/*文字間隔を少し広くとる指定*/
+	font-size: 0.8rem;
+	letter-spacing: 0.2em;
 }
-
-/*spanタグの前に「〜」を出力する指定*/
 main h2 span::before {
 	content: "〜";
 	padding-right: 10px;
 }
 
-/*spanタグの後に「〜」を出力する指定*/
 main h2 span::after {
 	content: "〜";
 	padding-left: 10px;
@@ -129,136 +119,116 @@ main h2 span::after {
 #menubar_hdr {
 	display: block;
 	position: fixed;z-index: 100;
-	top: 20px;		/*上からの配置場所*/
-	right: 20px;	/*左からの配置場所*/
-	width: 50px;	/*幅*/
-	height: 50px;	/*高さ*/
+	top: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
 	cursor: pointer;
-	background: rgba(0,0,0,0.6) url(../images/icon_menu.png) no-repeat center top/50px;	/*背景色、背景画像の読み込み、画像の上半分（３本マーク）を表示。幅は50px。*/
+	background: rgba(0,0,0,0.6) url(../images/icon_menu.png) no-repeat center top/50px;
 }
 
 /*×印が出ている状態の設定。*/
 #menubar_hdr.close {
-	background: #ff0000 url(../images/icon_menu.png) no-repeat center bottom/50px;	/*背景色、背景画像の読み込み、画像の下半分（×マーク）を表示。幅は50px。*/
+	background: #ff0000 url(../images/icon_menu.png) no-repeat center bottom/50px;
 }
 
 /*メニューの設定---------------------------------------------------------------------------*/
 #menubar ul {list-style: none;}
 
-/*ボックス全体の設定*/
 #menubar {
-	display: none;				/*デフォルトで非表示にしておく*/
-	animation-name: opa1;		/*@keyframesの指定*/
-	animation-duration: 1S;		/*アニメーションの実行時間*/
-	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを維持、終了後は最後のキーフレームを維持。*/
-	position: fixed;overflow: auto;z-index: 99;	/*fixedはスクロールしても動かない為の指定*/
+	display: none;	
+	animation-name: opa1;
+	animation-duration: 1S;
+	animation-fill-mode: both;
+	position: fixed;overflow: auto;z-index: 99;
 	left: 0px;top: 0px;
 	width: 100%;
 	height: 100%;
-	padding: 50px;		/*ボックス内の余白*/
-	text-align: center;	/*テキストをセンタリング*/
-	background: rgba(0,0,0,0.8);	/*背景色*/
-	font-size: 1.2rem;	/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
+	padding: 50px;
+	text-align: center;
+	background: rgba(0,0,0,0.8);
+	font-size: 1.2rem;
 }
 
-/*メニュー１個あたりの設定*/
 #menubar li {
-	margin-bottom: 20px;	/*下に空けるスペース*/
+	margin-bottom: 20px;
 }
 
 #menubar a {
 	display: block;text-decoration: none;
-	text-align: center;	/*テキストをセンタリング*/
-	background: #fff;	/*背景色*/
-	color: #000;		/*文字色*/
-	border-radius: 5px;	/*角丸の指定*/
-	box-shadow: 0px 0px 50px 10px rgba(255,255,255,0.4);	/*ボックスの影。右へ、下へ、ぼかし幅、範囲。255,255,255は白の事で0.4は色が40%出た状態の事。*/
-	padding: 5px;	/*余白*/
+	text-align: center;
+	background: #fff;
+	color: #000;
+	border-radius: 5px;
+	box-shadow: 0px 0px 50px 10px rgba(255,255,255,0.4);
+	padding: 5px;
 }
 
-/*メニュー内のspanタグ（小さい日本語部分）*/
 #menubar span {
 	display: block;
-	font-size: 0.7rem;	/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
+	font-size: 0.7rem;
 }
 
 /*フッター設定---------------------------------------------------------------------------*/
 footer small {font-size: 100%;}
 
 footer {
-	font-size: 0.6rem;		/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
-	text-align: center;		/*内容をセンタリング*/
-	padding: 20px;			/*ボックス内の余白*/
+	font-size: 0.6rem;
+	text-align: center;
+	padding: 20px;
 }
 
-/*リンクテキスト*/
 footer a {text-decoration: none;}
 
-/*著作部分*/
 footer .pr {display: block;}
 
 /*フッターにあるアイコン類---------------------------------------------------------------------------*/
-/*アイコン類を囲むブロック*/
 ul.icon {
 	list-style: none;
 	margin: 0;padding: 0;
-	margin-bottom: 30px;	/*下に空けるスペース*/
+	margin-bottom: 30px;
 }
 
-/*アイコン１個あたりの設定*/
 ul.icon li {
-	display: inline-block;	/*リストタグを横並びにさせる指定*/
+	display: inline-block;
 }
 
-/*アイコン画像の設定*/
 ul.icon img {
-	width: 30px;	/*アイコン画像の幅*/
+	width: 30px;
 }
 
-/*画像のマウスオン時*/
 ul.icon img:hover {
-	opacity: 0.8;	/*透明度。0.8は色が80%出た状態の事。*/
+	opacity: 0.8;
 }
 
-/*トップページの「今週のランチ」ブロック---------------------------------------------------------------------------*/
-/*写真とメニュー解説テキストを囲むブロック*/
+/*トップページのinfomation---------------------------------------------------------------------------*/
 .list2 {
-	display: flex;			/*flexボックスを使う指定*/
-	flex-direction: column;	/*子要素を縦並びにする*/
-	align-items: center;	/*垂直揃えの指定。上下中央に配置されるように。*/
-	justify-content: space-between;	/*並びかたの種類の指定*/
-	margin-bottom: 40px;	/*下に空けるスペース*/
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;	
+	margin-bottom: 40px;
 }
-
-/*list2ブロック内のfigureタグ。写真を囲むブロック。*/
 .list2 figure {
-	width: 90%;				/*幅*/
-	text-align: center;		/*テキストをセンタリング*/
+	width: 90%;
+	text-align: center;
 }
-
-/*料理写真*/
 .list2 figure img {
-	padding: 10px;		/*写真の周りに少し余白を作って、より写真っぽく見せる*/
-	background: #fff;	/*上の10pxとの間に出る色*/
-	box-shadow: 0px 0px 50px 10px rgba(255,255,255,0.4);	/*ボックスの影。右へ、下へ、ぼかし幅、範囲。255,255,255は白の事で0.4は色が40%出た状態の事。*/
-	transform: rotate(-2deg);	/*左に少しだけ回転させる指定。回転させたくなければこの１行と、下の「.list2:nth-of-type(even) img」のブロックを削除。*/
+	padding: 10px;	
+	background: #fff;
+	transform: rotate(-2deg);
 }
-
-/*list2内のtextブロック*/
 .list2 .text {
-	width: 100%;	/*幅*/
+	width: 100%;
 }
-
-/*list2内のリストタグ*/
 .list2 li {
-	margin-bottom: 10px;	/*上下間にとるスペース*/
+	margin-bottom: 10px;
 }
 
-/*list2内のリストタグ内のspanタグ。文字サイズの小さい説明テキスト部分です。*/
 .list2 li span {
 	display: block;
-	font-size: 0.8rem;	/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
-	opacity: 0.5;		/*透明度。0.5は色が50%出た状態の事。*/
+	font-size: 0.8rem;
+	opacity: 0.5;
 }
 
 /*PAGE TOP（↑）設定---------------------------------------------------------------------------*/
@@ -266,19 +236,18 @@ ul.icon img:hover {
 
 .pagetop a {
 	display: block;text-decoration: none;text-align: center;
-	width: 50px;		/*幅*/
-	line-height: 50px;	/*高さ*/
+	width: 50px;
+	line-height: 50px;
 	position: fixed;
-	right: 30px;		/*右からの配置場所指定*/
-	bottom: 30px;		/*下からの配置場所指定*/
-	color: #fff;		/*文字色*/
-	background: rgba(0,0,0,0.4);	/*背景色。0,0,0は黒色の指定で0.4は色が40%出た状態。*/
-	border: 1px solid #fff;	/*枠線の幅、線種、色*/
+	right: 30px;
+	bottom: 30px;
+	color: #fff;
+	background: rgba(0,0,0,0.4);
+	border: 1px solid #fff;
 }
 
-/*マウスオン時*/
 .pagetop a:hover {
-	background: rgba(0,0,0,0.8);	/*背景色。0,0,0は黒色の指定で0.8は色が80%出た状態。*/
+	background: rgba(0,0,0,0.8);
 }
 
 /*その他---------------------------------------------------------------------------*/
@@ -293,12 +262,11 @@ ul.icon img:hover {
 .look {display: inline-block;border: 1px solid #ccc;padding: 5px 20px;background: rgba(0,0,0,0.03);border-radius: 5px;margin: 5px 0;}
 .ofx {overflow-x: hidden;}
 
-/*---------------------------------------------------------------------------*/
-/* photo.htmlの設定 */
+/* photo.htmlの設定---------------------------------------------------------------------------*/
 div.photo {
 	height:auto;
 }
-/*ブロック内のh1タグ*/
+
 .photo h1 {								
 	font-family: 'Tangerine', cursive, "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka;
 	font-weight: normal;				
@@ -308,20 +276,17 @@ div.photo {
 	animation-duration:5s;
 }
 
-/*ブロック内のh2タグ内のspanタグ（日本語の小さい説明用部分）*/
 .photo h1 span {
 	display: block;	
-	font-size: 0.8rem;			/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
-	letter-spacing: 0.2em;		/*文字間隔を少し広くとる指定*/
+	font-size: 0.8rem;
+	letter-spacing: 0.2em;
 }
 
-/*spanタグの前に「〜」を出力する指定*/
 .photo h1 span::before {
 	content: "〜";
 	padding-right: 10px;
 }
 
-/*spanタグの後に「〜」を出力する指定*/
 .photo h1 span::after {
 	content: "〜";
 	padding-left: 10px;
@@ -371,43 +336,39 @@ div.photo {
 }
 
 /* movie.htmlの設定 ---------------------------------------------------------------------------*/
-/*listボックスの設定*/
 .list3 {
-	display: flex;			/*flexボックスを使う指定*/
-	flex-direction: column;	/*子要素を縦並びにする*/
-	align-items: center;	/*垂直揃えの指定。上下中央に配置されるように。*/
-	justify-content: space-between;	/*並びかたの種類の指定*/
-	margin-bottom: 40px;	/*下に空けるスペース*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;	
+	margin-bottom: 40px;
 	border: 1px solid #555;
 	padding: 10px;
 }
 
-/*list3ブロック内のfigureタグ。写真を囲むブロック。*/
 .list3 figure {
-	width: 90%;				/*幅*/
-	text-align: center;		/*テキストをセンタリング*/
+	width: 90%;
+	text-align: center;
 }
 
-/*list3内のtextブロック*/
 .list3 .text {
-	width: 100%;	/*幅*/
+	width: 100%;
 }
 
-/*leftスタイル。左からフェードインしてくるスタイル（待機中）*/
 .left {
-	left: -100px;	/*基準値より左に100pxの場所からスタート*/
+	left: -100px;
 }
-/*要素が見えたら実行するアクション*/
+
 .leftstyle {
-	left: 0px;		/*基準値まで戻す*/
+	left: 0px;
 }
-/*rightスタイル。右からフェードインしてくるスタイル（待機中）*/
+
 .right {
-	right: -100px;	/*基準値より右に100pxの場所からスタート*/
+	right: -100px;
 }
-/*要素が見えたら実行するアクション*/
+
 .rightstyle {
-	right: 0px;		/*基準値まで戻す*/
+	right: 0px;
 }
 
 /*ここから下は画面幅800px以上の追加指定---------------------------------------------------------------------------*/
@@ -415,20 +376,19 @@ div.photo {
 
 /*全体の設定---------------------------------------------------------------------------*/
 html, body {
-	font-size: 18px;	/*基準となるフォントサイズの上書き*/
+	font-size: 18px;
 }
 
-/*section全般の設定*/
 section + section {
-	padding-top: 50px;	/*sectionの間に空けるスペース*/
+	padding-top: 50px;
 }
 
 /*container。サイト全体を囲むブロック。---------------------------------------------------------------------------*/
 #container {
-	padding: 0 50px;	/*上下、左右へのブロック内の余白*/
+	padding: 0 50px;
 }	
-/*---------------------------------------------------------------------------*/
-/*トップページのロゴ*/
+
+/*トップページのロゴ---------------------------------------------------------------------------*/
 .flowing h1 {
 	font-size: 4em;
         padding-top: 150px;
@@ -437,41 +397,37 @@ section + section {
 	font-size: 1.5em;;
 }
 
-/*トップページの「今週のランチ」ブロック---------------------------------------------------------------------------*/
-/*写真とメニュー解説テキストを囲むブロック*/
+/*トップページのinformationブロック---------------------------------------------------------------------------*/
 .list2 {
-	flex-direction: row;	/*子要素を横並びにする*/
-	margin-bottom: 100px;	/*下に空けるスペース*/
+	flex-direction: row;
+	margin-bottom: 100px;
 }
 
-/*list2ブロック内のfigureタグ。写真を囲むブロック。*/
 .list2 figure {
-	width: 48%;	/*幅*/
+	width: 48%;
 }
 
-/*list2内のtextブロック*/
 .list2 .text {
-	width: 48%;	/*幅*/
+	width: 48%;
 }
+	
 /* movie.htmlの設定 ---------------------------------------------------------------------------*/	
 .list3 {
-	flex-direction: row;	/*子要素を横並びにする*/
-	margin-bottom: 100px;	/*下に空けるスペース*/
+	flex-direction: row;
+	margin-bottom: 100px;
 }
 
-/*list3ブロック内のfigureタグ。写真を囲むブロック。*/
 .list3 figure {
-	width: 48%;	/*幅*/
+	width: 48%;
 }
 
-/*list3内のtextブロック*/
 .list3 .text {
-	width: 48%;	/*幅*/
+	width: 48%;
 }
 
 /*その他---------------------------------------------------------------------------*/
 .ws {width: 45%;display: inline-block;}
 
-/*　※注意！　下の閉じカッコ　}　は800px以上の設定に必要なので、うっかり削除しないように。　*/
+/*　※注意！　下の閉じカッコ　}　は800px以上の設定に必要なので、うっかり削除しないように。*/
 
 }
