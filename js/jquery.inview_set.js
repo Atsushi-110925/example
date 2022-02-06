@@ -19,6 +19,7 @@ $('.right').on('inview', function() {
 });
 
 //photo.html
+function moveAnimation(){
   function randomAnime(){
     $(randomElm).addClass("play");//親要素にplayクラスを付与
     var rnd = Math.floor(Math.random() * randomElmChild.length); //配列数からランダム数値を取得
