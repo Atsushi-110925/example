@@ -14,7 +14,6 @@ html,body {
 	overflow-x: hidden;
 	font-size: 14px;
 }
-
 body {
 	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	-webkit-text-size-adjust: none;
@@ -22,14 +21,18 @@ body {
 	color: #E5E5E5;	
 	line-height: 2;	
 }
-
-figure {margin: 0;}
-dd {margin: 0;}
-
-table {border-collapse:collapse;}
-
-img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
-
+figure {
+	margin: 0;
+}
+dd {
+	margin: 0;
+}
+table {
+	border-collapse:collapse;
+}
+img {
+	border: none;max-width: 100%;height: auto;vertical-align: middle;
+}
 section + section {
 	padding-top: 30px;
 }
@@ -54,7 +57,6 @@ header{
 	height: 100vh;
 	text-align:center;
 }
-
 .flowing {
 	font-weight: bold;
 	color: #fff;
@@ -65,11 +67,9 @@ header{
 	animation-name: fade;
 	animation-duration:5s;
 }
-
 .flowing p {
 	font-size: 12px;
 }
-
 @keyframes fade{
   0%{
     opacity: 0;
@@ -78,7 +78,6 @@ header{
     opacity: 1;
   }
 }
-
 .scroll {
 	position: absolute;left: 50%;bottom: 20px;transform: translateX(-50%);
 	width: 30px;
@@ -89,7 +88,6 @@ header{
 main {
 	margin-bottom: 100px;
 }
-
 main h2 {
 	opacity: 0;
 	text-align: center;
@@ -98,7 +96,6 @@ main h2 {
 	font-size: 4rem;
 	margin-bottom: 80px;
 }
-
 main h2 span {
 	display: block;	
 	font-size: 0.8rem;
@@ -108,7 +105,6 @@ main h2 span::before {
 	content: "〜";
 	padding-right: 10px;
 }
-
 main h2 span::after {
 	content: "〜";
 	padding-left: 10px;
@@ -126,15 +122,14 @@ main h2 span::after {
 	cursor: pointer;
 	background: rgba(0,0,0,0.6) url(../images/icon_menu.png) no-repeat center top/50px;
 }
-
-/*×印が出ている状態の設定。*/
 #menubar_hdr.close {
 	background: #ff0000 url(../images/icon_menu.png) no-repeat center bottom/50px;
 }
 
 /*メニューの設定---------------------------------------------------------------------------*/
-#menubar ul {list-style: none;}
-
+#menubar ul {
+	list-style: none;
+}
 #menubar {
 	display: none;	
 	animation-name: opa1;
@@ -149,11 +144,9 @@ main h2 span::after {
 	background: rgba(0,0,0,0.8);
 	font-size: 1.2rem;
 }
-
 #menubar li {
 	margin-bottom: 20px;
 }
-
 #menubar a {
 	display: block;text-decoration: none;
 	text-align: center;
@@ -163,24 +156,26 @@ main h2 span::after {
 	box-shadow: 0px 0px 50px 10px rgba(255,255,255,0.4);
 	padding: 5px;
 }
-
 #menubar span {
 	display: block;
 	font-size: 0.7rem;
 }
 
 /*フッター設定---------------------------------------------------------------------------*/
-footer small {font-size: 100%;}
-
+footer small {
+	font-size: 100%;
+}
 footer {
 	font-size: 0.6rem;
 	text-align: center;
 	padding: 20px;
 }
-
-footer a {text-decoration: none;}
-
-footer .pr {display: block;}
+footer a {
+	text-decoration: none;
+}
+footer .pr {
+	display: block;
+}
 
 /*フッターにあるアイコン類---------------------------------------------------------------------------*/
 ul.icon {
@@ -188,15 +183,12 @@ ul.icon {
 	margin: 0;padding: 0;
 	margin-bottom: 30px;
 }
-
 ul.icon li {
 	display: inline-block;
 }
-
 ul.icon img {
 	width: 30px;
 }
-
 ul.icon img:hover {
 	opacity: 0.8;
 }
@@ -224,7 +216,6 @@ ul.icon img:hover {
 .list2 li {
 	margin-bottom: 10px;
 }
-
 .list2 li span {
 	display: block;
 	font-size: 0.8rem;
@@ -232,8 +223,9 @@ ul.icon img:hover {
 }
 
 /*PAGE TOP（↑）設定---------------------------------------------------------------------------*/
-.pagetop-show {display: block;}
-
+.pagetop-show {
+	display: block;
+}
 .pagetop a {
 	display: block;text-decoration: none;text-align: center;
 	width: 50px;
@@ -245,7 +237,6 @@ ul.icon img:hover {
 	background: rgba(0,0,0,0.4);
 	border: 1px solid #fff;
 }
-
 .pagetop a:hover {
 	background: rgba(0,0,0,0.8);
 }
@@ -266,7 +257,6 @@ ul.icon img:hover {
 div.photo {
 	height:auto;
 }
-
 .photo h1 {								
 	font-family: 'Tangerine', cursive, "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka;
 	font-weight: normal;				
@@ -275,29 +265,24 @@ div.photo {
 	animation-name: fade;
 	animation-duration:5s;
 }
-
 .photo h1 span {
 	display: block;	
 	font-size: 0.8rem;
 	letter-spacing: 0.2em;
 }
-
 .photo h1 span::before {
 	content: "〜";
 	padding-right: 10px;
 }
-
 .photo h1 span::after {
 	content: "〜";
 	padding-left: 10px;
 }
-
 .randomScroll {
     margin: 5px 0px 30px;
     padding-left: 0;
     text-align: center;
 }
-
 .randomScroll .box {
     border: 3px solid #d3d3d3;
     list-style: none;
@@ -316,7 +301,6 @@ div.photo {
     height: auto;
     box-shadow: 0 5px 20px 0px rgb(0 0 0 / 30%);
 }
-
 /*ふわっと表示*/
 .fadeUp {
  animation-name:fadeUpAnime;
@@ -345,28 +329,22 @@ div.photo {
 	border: 1px solid #555;
 	padding: 10px;
 }
-
 .list3 figure {
 	width: 90%;
 	text-align: center;
 }
-
 .list3 .text {
 	width: 100%;
 }
-
 .left {
 	left: -100px;
 }
-
 .leftstyle {
 	left: 0px;
 }
-
 .right {
 	right: -100px;
 }
-
 .rightstyle {
 	right: 0px;
 }
@@ -378,7 +356,6 @@ div.photo {
 html, body {
 	font-size: 18px;
 }
-
 section + section {
 	padding-top: 50px;
 }
@@ -402,11 +379,9 @@ section + section {
 	flex-direction: row;
 	margin-bottom: 100px;
 }
-
 .list2 figure {
 	width: 48%;
 }
-
 .list2 .text {
 	width: 48%;
 }
@@ -416,11 +391,9 @@ section + section {
 	flex-direction: row;
 	margin-bottom: 100px;
 }
-
 .list3 figure {
 	width: 48%;
 }
-
 .list3 .text {
 	width: 48%;
 }
