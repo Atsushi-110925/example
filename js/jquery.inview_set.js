@@ -18,7 +18,7 @@ $('.right').on('inview', function() {
 	$(this).addClass('rightstyle');
 });
 
-// photo.html
+//photo.html
   function randomAnime(){
     $(randomElm).addClass("play");//親要素にplayクラスを付与
     var rnd = Math.floor(Math.random() * randomElmChild.length); //配列数からランダム数値を取得
@@ -64,9 +64,9 @@ $('.right').on('inview', function() {
 // 画面をスクロールをしたら動かしたい場合の記述
   $(window).scroll(function (){
     moveAnimation();/* アニメーション用の関数を呼ぶ*/
-  });// ここまで画面をスクロールをしたら動かしたい場合の記述
+  });
 
 // 画面が読み込まれたらすぐに動かしたい場合の記述
   $(window).on('load', function(){
     moveAnimation();/* アニメーション用の関数を呼ぶ*/
-  });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+  });
