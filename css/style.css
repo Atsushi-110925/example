@@ -327,13 +327,13 @@ div.photo {
 	padding-left: 10px;
 }
 
-.gallery {
+.randomScroll {
     margin: 5px 0px 30px;
     padding-left: 0;
     text-align: center;
 }
 
-.gallery .gallery-item {
+.randomScroll .box {
     border: 3px solid #d3d3d3;
     list-style: none;
     display: inline-flex;
@@ -341,14 +341,32 @@ div.photo {
     position: relative;
     bottom: -15px;
     margin: 3px;
+    opacity: 0;
 }
-.gallery .gallery-item figure {
+.randomScroll .box figure {
     margin: 0;
 }
-.gallery .gallery-item img {
+.randomScroll .box img {
     max-width: 100%;
     height: auto;
     box-shadow: 0 5px 20px 0px rgb(0 0 0 / 30%);
+
+/*ふわっと表示*/
+.fadeUp {
+ animation-name:fadeUpAnime;
+ animation-duration:0.5s;
+ animation-fill-mode:forwards;
+ opacity: 0;
+ }
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
 }
 
 /* movie.htmlの設定 ---------------------------------------------------------------------------*/
