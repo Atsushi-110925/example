@@ -295,12 +295,12 @@ div.photo {
 	content: "〜";
 	padding-left: 10px;
 }
-.randomScroll {
+.flex {
     margin: 5px 0px 30px;
     padding-left: 0;
     text-align: center;
 }
-.randomScroll .box {
+.flex .box {
     border: 3px solid #d3d3d3;
     list-style: none;
     display: inline-flex;
@@ -310,10 +310,10 @@ div.photo {
     margin: 3px;
     opacity: 0;
 }
-.randomScroll .box figure {
+.flex .box figure {
     margin: 0;
 }
-.randomScroll .box img {
+.flex .box img {
     max-width: 100%;
     height: auto;
     box-shadow: 0 5px 20px 0px rgb(0 0 0 / 30%);
