@@ -254,6 +254,23 @@ ul.icon img:hover {
 .ofx {overflow-x: hidden;}
 
 /* photo.htmlの設定---------------------------------------------------------------------------*/
+ul.navmenu {
+	text-align: center;
+	padding: 10px 0px;
+	margin-bottom: 15px;
+}
+ul.navmenu li {
+	display: inline;
+}
+ul.navmenu li a {
+	padding-right: 10px;
+	padding-left: 10px;
+	text-decoration: none;
+}
+ul.navmenu li.current a {
+	color: #f6e62f;
+}
+
 div.photo {
 	height:auto;
 }
