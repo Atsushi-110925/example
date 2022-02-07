@@ -355,6 +355,17 @@ div.photo {
 .list3 .text {
 	width: 100%;
 }
+.list3 .text h4 {
+    margin: 10px 0px;
+}
+.list3 .text h4 p {
+    margin: 0px;
+    font-size: 0.5rem;
+}
+.list3 .text p {
+    margin: 5px 0px;
+    font-size: 0.7rem;
+}
 .left {
 	left: -100px;
 }
