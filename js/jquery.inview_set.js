@@ -19,55 +19,33 @@ $('.right').on('inview', function() {
 });
 
 //photo.html
-function moveAnimation(){
-  function randomAnime(){
-    $(randomElm).addClass("play");//親要素にplayクラスを付与
-    var rnd = Math.floor(Math.random() * randomElmChild.length); //配列数からランダム数値を取得
-    var moveData = "fadeUp";//アニメーション名＝CSSのクラス名を指定
-    $(randomElmChild[rnd]).addClass(moveData);//アニメーションのクラスを追加
-    randomElmChild.splice(rnd,1);//アニメーション追加となった要素を配列から削除
-    if(randomElmChild.length == 0 ){//配列の残りがあるか確認
-      $(randomElm).removeClass("play");//なくなった場合は親要素のplayクラスを削除
-    }else{
-      setTimeout(function(){randomAnime();},500); //0.5秒間隔でアニメーションをスタートさせる。※ランダムのスピード調整はこの数字を変更させる  
-    }
-  }
-  
-//スクロールしたらランダムに出現 
-  var randomElm2 = $(".randomScroll");//親要素取得
-  var randomElm2Child = $(randomElm2).children(); //親の子要素を取得
-  randomScrollAnime();
-  function randomScrollAnime(){
-    var elemPos = $(".randomScroll").offset().top-50;//要素より、50px上まで来たら
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll >= elemPos - windowHeight){
-      if(randomElm2Child.length >0 ){ //配列数以上であれば処理をおこなう
-        var rnd = Math.floor(Math.random() * randomElm2Child.length);//配列数から表示する数値をランダムで取得
-        var moveData ="fadeUp";//アニメーション名＝CSSのクラス名を指定
-        if(animeFlag){//スクロールする度に動作するのでアニメーションが終わるまで処理をさせないようにする
-          animeFlag = false;//アニメーション処理が終わるまで一時的にfalseにする
-          $(randomElm2Child[rnd]).addClass(moveData);//アニメーションのクラスを追加
-          setTimeout(function(){
-            animeFlag = true;//次の処理をおこなうためにtrueに変更
-            randomScrollAnime();//自身の処理を繰り返す
-          },500); //0.5秒間隔で。※ランダムのスピード調整はこの数字を変更させる
-          randomElm2Child.splice(rnd,1);//アニメーション追加となった要素を配列から削除
+function delayScrollAnime() {
+  var time = 0.2;//遅延時間を増やす秒数の値
+  var value = time;
+  $('.delayScroll').each(function () {
+    var parent = this;          //親要素を取得
+    var elemPos = $(this).offset().top;//要素の位置まで来たら
+    var scroll = $(window).scrollTop();//スクロール値を取得
+    var windowHeight = $(window).height();//画面の高さを取得
+    var childs = $(this).children();  //子要素を取得
+    
+    if (scroll >= elemPos - windowHeight && !$(parent).hasClass("play")) {//指定領域内にスクロールが入ったらまた親要素にクラスplayがなければ
+      $(childs).each(function () {
+        if (!$(this).hasClass("fadeUp")) {//アニメーションのクラス名が指定されているかどうかをチェック
+          $(parent).addClass("play"); //親要素にクラス名playを追加
+          $(this).css("animation-delay", value + "s");//アニメーション遅延のCSS animation-delayを追加し
+          $(this).addClass("fadeUp");//アニメーションのクラス名を追加
+          value = value + time;//delay時間を増加させる
+          //全ての処理を終わったらplayを外す
+          var index = $(childs).index(this);
+          if((childs.length-1) == index){
+            $(parent).removeClass("play");
+          }
         }
-      }
-    }else{
-      animeFlag = true;
+      })
+    }else {
+      $(childs).removeClass("fadeUp");//アニメーションのクラス名を削除
+      value = time;//delay初期値の数値に戻す
     }
-  }
+  })
 }
-  var animeFlag = true;//スクロールする度に動作するのでアニメーションが終わるまで処理をさせないようにするための定義
-
-// 画面をスクロールをしたら動かしたい場合の記述
-  $(window).scroll(function (){
-    moveAnimation();/* アニメーション用の関数を呼ぶ*/
-  });
-
-// 画面が読み込まれたらすぐに動かしたい場合の記述
-  $(window).on('load', function(){
-    moveAnimation();/* アニメーション用の関数を呼ぶ*/
-  });
