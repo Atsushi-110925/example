@@ -266,6 +266,8 @@ ul.navmenu li a {
 	padding-right: 10px;
 	padding-left: 10px;
 	text-decoration: none;
+	animation-name: fade;
+	animation-duration:5s;
 }
 ul.navmenu li.current a {
 	color: #f6e62f;
