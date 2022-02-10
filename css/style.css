@@ -316,7 +316,7 @@ div.photo {
     max-width: 100%;
     height: auto;
 }
-ul li a:hover {
+.flex .box a:hover {
       opacity: 0.8;
     }
 .modal {
