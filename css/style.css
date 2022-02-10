@@ -298,45 +298,28 @@ div.photo {
 	padding-left: 10px;
 }
 
-#sample figure{
-  margin: 0;     /* マージンの初期化 */
-  display: none; /* 最初に画像を隠しておく */
+.flex {
+    margin: 5px 0px 30px;
+    padding-left: 0;
+    text-align: center;
 }
-#sample figure:target{
-  display: block;  /* 画像を表示する */
-  position: fixed; /* スクロールしても画像を動かさない */
-  top: 0;          /* 画面全体に対して画像を中央に設置する */
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;    /* 画像を一番前に表示する */
+.flex .box {
+    border: 3px solid #d3d3d3;
+    list-style: none;
+    display: inline-flex;
+    width: 25%;
+    position: relative;
+    bottom: -15px;
+    margin: 3px;
+    opacity: 0;
 }
-#sample figure:target #overlay{
-  position: absolute;        /* 画像が重なるように */
-  top: 0;                    /* 4つを0にして画面全体に広げる */
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;     /* フレックスアイテムの並びを縦にする */
-  justify-content: center;    /* 左右中央に設置 */
-  align-items: center;        /* 上下中央に設置 */
-  background: rgba(255, 255, 255, 0.7); /* 画像を見やすくするため透過の黒背景 */
-  text-decoration: none;      /* リンクなので文字に下線など装飾が付かないようにする */
-  color: #fff;
+.flex .box figure {
+    margin: 0;
 }
-#sample figure:target img{
-  animation: fadein .3s;   /* 0.3秒かけたフェードイン効果 */
-}
-@keyframes fadein{         /* フェードイン効果の中身 */
-  0%{
-    transform: scale(0.2);
-    opacity: 0.2;
-  }
-  100%{
-    transform: scale(1);
-    opacity: 1;
-  }
+.flex .box img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 5px 20px 0px rgb(0 0 0 / 30%);
 }
 /*ふわっと表示*/
 .fadeUp {
