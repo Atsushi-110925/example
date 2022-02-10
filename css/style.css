@@ -318,7 +318,7 @@ div.photo {
 }
 .flex .box a:hover {
       opacity: 0.8;
-    }
+}
 .modal {
       position: fixed;
       top: 0;
@@ -327,7 +327,7 @@ div.photo {
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.8);
       display: none;
-    }
+}
 .bigimg {
       position: absolute;
       width: 80%;
@@ -337,18 +337,18 @@ div.photo {
       right: 0;
       margin-right: auto;
       margin-left: auto;
-    }
+}
 .close-btn {
       color: #fff;
       font-size: 40px;
       position: absolute;
       right: 20px;
       top: 0;
-    }
+}
 .close-btn a {
       color: #fff;
       text-decoration: none;
-    }
+}
 /*ふわっと表示*/
 .fadeUp {
  animation-name:fadeUpAnime;
