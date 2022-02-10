@@ -381,6 +381,9 @@ div.photo {
 	width: 90%;
 	text-align: center;
 }
+.list3 figure a:hover {
+      opacity: 0.8;
+}
 .list3 .text {
 	width: 100%;
 }
