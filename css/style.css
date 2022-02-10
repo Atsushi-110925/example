@@ -312,13 +312,9 @@ div.photo {
     margin: 3px;
     opacity: 0;
 }
-.flex .box figure {
-    margin: 0;
-}
 .flex .box img {
     max-width: 100%;
     height: auto;
-    box-shadow: 0 5px 20px 0px rgb(0 0 0 / 30%);
 }
 .flex .box a:hover {
       opacity: 0.8;
