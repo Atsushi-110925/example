@@ -343,7 +343,7 @@ div.photo {
       font-size: 40px;
       position: absolute;
       right: 20px;
-      top: 0;
+      top: 50px;
 }
 .close-btn a {
       color: #fff;
