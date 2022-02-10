@@ -297,21 +297,7 @@ div.photo {
 	content: "〜";
 	padding-left: 10px;
 }
-#flex {
-    margin: 5px 0px 30px;
-    padding-left: 0;
-    text-align: center;
-}
-#sample {
-    border: 3px solid #d3d3d3;
-    list-style: none;
-    display: inline-flex;
-    width: 25%;
-    position: relative;
-    bottom: -15px;
-    margin: 3px;
-    opacity: 0;
-}
+
 #sample figure{
   margin: 0;     /* マージンの初期化 */
   display: none; /* 最初に画像を隠しておく */
