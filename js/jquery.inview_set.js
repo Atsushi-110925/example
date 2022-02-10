@@ -58,7 +58,7 @@ function delayScrollAnime() {
   });
 
 
- $('flex box a').click(function() {
+ $('.flex .box a').click(function() {
         var imgSrc = $(this).children().attr('src');
         $('.bigimg').children().attr('src', imgSrc);
         $('.modal').fadeIn();
